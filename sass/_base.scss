@@ -1,0 +1,41 @@
+@use 'variable' as v;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: v.$font-roboto;
+    max-width: 144rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
