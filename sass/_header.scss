@@ -1,0 +1,14 @@
+@use 'variable' as v;
+
+.header {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        background: v.$color-black;
+
+        .logo-wrapper {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@use 'variable' as v;
+@use "variable" as v;
 
 *,
 *::before,
@@ -8,34 +8,33 @@
 }
 
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-size: 62.5%;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
-	font-family: v.$font-roboto;
-    max-width: 144rem;
+	font-family: v.$font-family-select;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    outline: none;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
