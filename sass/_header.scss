@@ -1,37 +1,60 @@
-@use 'variable' as v;
-@use 'mixin' as m;
+@use "variable" as v;
+@use "mixin" as m;
 
 .header {
-    nav {
-        height: 9rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: v.$color-black;
+	background-color: v.$color-black;
 
-        .logo-wrapper {
-            display: flex;
-            gap: 1rem;
+	nav {
+		// padding: 2rem 0;
+        height: 8.8rem;
+        max-width: 80vw;
+        margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-            .logo {
-                width: 12rem;
-            }
-        }
+		.logo-wrapper {
+			display: flex;
+            align-items: center;
+			gap: 1rem;
 
-        .button-wrapper {
-            display: flex;
-            gap: 2rem;
+            h3.help-center {
+				font-size: v.$font-md-1;
+				color: v.$color-white;
+                font-weight: 300;
+                border-left: 2px solid v.$color-white;
+                padding-left: 1rem;
+			}
 
-            button.help {
-                @include m.button;
-                background-color: #191a1b;
-                border: 1px solid v.$color-white;
-            }
+			img.logo {
+				width: 14rem;
+				height: 4.2rem;
+			}
+		}
 
-            button.signin {
-                @include m.button;
-                background-color: v.$color-p-blue;
-            }
-        }
-    }
+		.button-wrapper {
+			display: flex;
+            align-items: center;
+			gap: 2rem;
+
+			button.help {
+				@include m.button;
+				background-color: #191a1b;
+                padding: .9rem 2.2rem;
+				border: 1px solid v.$color-white;
+			}
+
+			button.signin {
+				@include m.button;
+                padding: .9rem 3.2rem;
+				background-color: v.$color-p-blue;
+                transition: all ease-out .3s;
+
+                &:hover {
+                    color: v.$color-black;
+                    background-color: v.$color-white;
+                }
+			}
+		}
+	}
 }

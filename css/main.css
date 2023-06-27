@@ -1,5 +1,6 @@
 /* ==== Color ====== */
 /* ==== font ==== */
+/* ==== font weight ==== */
 *,
 *::before,
 *::after {
@@ -39,46 +40,155 @@ img {
   height: auto;
 }
 
+.header {
+  background-color: #000;
+}
 .header nav {
-  height: 9rem;
+  height: 8.8rem;
+  max-width: 80vw;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0);
 }
 .header nav .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
-.header nav .logo-wrapper .logo {
-  width: 12rem;
+.header nav .logo-wrapper h3.help-center {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  border-left: 2px solid #fff;
+  padding-left: 1rem;
+}
+.header nav .logo-wrapper img.logo {
+  width: 14rem;
+  height: 4.2rem;
 }
 .header nav .button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
 }
 .header nav .button-wrapper button.help {
   border-radius: 1rem;
-  padding: 1.5rem;
   font-size: 24px;
   color: #fff;
   background-color: #191a1b;
+  padding: 0.9rem 2.2rem;
   border: 1px solid #fff;
 }
 .header nav .button-wrapper button.signin {
   border-radius: 1rem;
-  padding: 1.5rem;
   font-size: 24px;
   color: #fff;
+  padding: 0.9rem 3.2rem;
   background-color: #4c5fd5;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+.header nav .button-wrapper button.signin:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.section1 {
+  height: 39rem;
+  background-color: #dadbf1;
+}
+.section1--container {
+  height: 100%;
+  max-width: 72rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.section1--container h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+.section1--container input {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.section1--container input:hover, .section1--container input:focus, .section1--container input:active {
+  border: 1.2px solid #4c5fd5;
+}
+.section1:hover {
+  border-bottom: 1px solid #000; /*Use js to change this later*/
+}
+
+.section2 {
+  padding: 9rem 0;
+}
+.section2--con {
+  display: grid;
+  grid-template-columns: repeat(2, 52rem);
+  grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 4.8rem;
+}
+.section2--con--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+.section2--con--container img {
+  width: 8.4rem;
+  height: 8.4rem;
+}
+.section2--con--container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.section2--con--container p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.section2--con--container a {
+  margin-top: 1.5rem;
+  font-size: 20px;
+  color: #000;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+.section2--con--container a:hover {
+  color: #4c5fd5;
+  border-bottom: 1px solid #4c5fd5;
 }
