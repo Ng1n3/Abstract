@@ -73,17 +73,37 @@
 			}
 
             a {
-                margin-top: 1.5rem;
+                
                 font-size: v.$font-sm-2;
-                color: v.$color-black;
+                color: v.$color-p-blue;
+                margin-top: 1rem;
                 transition: all ease-out .3s;
 
                 &:hover {
-                    color: v.$color-p-blue;
                     border-bottom: 1px solid v.$color-p-blue;
+                }
+
+                .nested-option {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 200rem;
                 }
             }
 
 		}
 	}
+}
+
+.footer {
+    &--container-left {
+        display: flex;
+        justify-content: center;
+        
+        &--list {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            
+    }
+}
 }

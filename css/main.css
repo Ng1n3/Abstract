@@ -18,6 +18,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  max-width: 144rem;
   line-height: 1.5;
   font-family: "Work Sans", sans-serif;
 }
@@ -182,13 +183,40 @@ img {
   font-weight: 400;
 }
 .section2--con--container a {
-  margin-top: 1.5rem;
   font-size: 20px;
-  color: #000;
+  color: #4c5fd5;
+  margin-top: 1rem;
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
 }
 .section2--con--container a:hover {
-  color: #4c5fd5;
   border-bottom: 1px solid #4c5fd5;
+}
+.section2--con--container a .nested-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 200rem;
+}
+
+.footer--container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer--container-left--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
