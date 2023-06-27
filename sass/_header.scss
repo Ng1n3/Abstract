@@ -1,14 +1,37 @@
 @use 'variable' as v;
+@use 'mixin' as m;
 
 .header {
     nav {
+        height: 9rem;
         display: flex;
         justify-content: space-evenly;
-        background: v.$color-black;
+        align-items: center;
+        background-color: v.$color-black;
 
         .logo-wrapper {
             display: flex;
             gap: 1rem;
+
+            .logo {
+                width: 12rem;
+            }
+        }
+
+        .button-wrapper {
+            display: flex;
+            gap: 2rem;
+
+            button.help {
+                @include m.button;
+                background-color: #191a1b;
+                border: 1px solid v.$color-white;
+            }
+
+            button.signin {
+                @include m.button;
+                background-color: v.$color-p-blue;
+            }
         }
     }
 }

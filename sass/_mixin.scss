@@ -1,5 +1,8 @@
-@use 'variable' as v;
+@use "variable" as v;
 
 @mixin button {
-border-radius: 1rem;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	font-size: v.$font-md-1;
+	color: v.$color-white;
 }

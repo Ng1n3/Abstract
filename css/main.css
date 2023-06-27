@@ -22,7 +22,6 @@ body {
 }
 
 button {
-  cursor: pointer;
   border: none;
   outline: none;
 }
@@ -41,17 +40,45 @@ img {
 }
 
 .header nav {
+  height: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: rgba(0, 0, 0, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 .header nav .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+}
+.header nav .logo-wrapper .logo {
+  width: 12rem;
+}
+.header nav .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.header nav .button-wrapper button.help {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 24px;
+  color: #fff;
+  background-color: #191a1b;
+  border: 1px solid #fff;
+}
+.header nav .button-wrapper button.signin {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 24px;
+  color: #fff;
+  background-color: #4c5fd5;
 }
