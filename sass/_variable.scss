@@ -17,3 +17,12 @@ $font-max-1: 80px;
 $font-wt-sm: 300;
 $font-wt-md: 400;
 $font-wt-lg: 500;
+
+/* ==== media queries ===== */
+
+$bp-largest: 73.75em;// 1180px. 1em = 16px;
+$bp-large: 65.25em; // 1050px;
+$bp-medium: 60.937em; // 975px;
+$bp-small: 46.875em; // 750px;
+$bp-smaller: 37.5em; // 600px;
+

@@ -1,6 +1,7 @@
 /* ==== Color ====== */
 /* ==== font ==== */
 /* ==== font weight ==== */
+/* ==== media queries ===== */
 *,
 *::before,
 *::after {
@@ -151,6 +152,9 @@ img {
 .section1:hover {
   border-bottom: 1px solid #000; /*Use js to change this later*/
 }
+.section1:active, .section1:focus {
+  border-bottom: none;
+}
 
 .section2 {
   padding: 9rem 0;
@@ -203,20 +207,79 @@ img {
   gap: 200rem;
 }
 
-.footer--container-left {
+.footer {
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 5rem;
+  padding: 5rem 0;
 }
 .footer--container-left--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #fff;
+}
+.footer--container-left--list--container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer--container-left--list--container li:not(:nth-of-type(1)) {
+  margin-top: 0.7rem;
+}
+.footer--container-left--list--container li a {
+  font-size: 16px;
+  color: #fff;
+  cursor: default;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+.footer--container-left--list--container li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.footer--container-left--list--container p {
+  font-size: 16px;
+}
+.footer--right--section {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.footer--right--section img {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+.footer--right--section p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+}
+.sticky button.stick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: #fff;
+  background-color: #4c5fd5;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+.sticky button.stick img {
+  width: 2.5rem;
+  height: 2.5rem;
 }

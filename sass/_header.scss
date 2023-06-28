@@ -55,6 +55,10 @@
                     background-color: v.$color-white;
                 }
 			}
+
+            @media only screen and (max-with: $bp-largest) {
+                @include m.hidden;
+            }
 		}
 	}
 }

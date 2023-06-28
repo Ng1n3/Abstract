@@ -5,3 +5,7 @@
 	font-size: v.$font-md-1;
 	color: v.$color-white;
 }
+
+@mixin hidden {
+        display: none;
+}

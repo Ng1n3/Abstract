@@ -40,6 +40,10 @@
 	&:hover {
 		border-bottom: 1px solid v.$color-black; /*Use js to change this later*/
 	}
+
+    &:active, &:focus {
+        border-bottom: none;
+    }
 }
 
 .section2 {
@@ -95,15 +99,83 @@
 }
 
 .footer {
+    background-color: v.$color-black;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 0;
     &--container-left {
-        display: flex;
-        justify-content: center;
         
         &--list {
             display: flex;
-            gap: 1.5rem;
+            gap: 2.5rem;
             justify-content: center;
-            
+            color: v.$color-white;
+
+
+            &--container {
+                h3 {
+                    font-size: v.$font-md-1;
+                    font-weight: v.$font-wt-lg;
+                }
+
+                li:not(:nth-of-type(1)) {
+                    margin-top: .7rem;
+                }
+
+                li a {
+                    font-size: v.$font-sm-1;
+                    color: v.$color-white;
+                    cursor: default;
+                    transition: all ease-out .3s;
+
+                    &:hover {
+                        border-bottom: 1px solid v.$color-white;
+                    }
+                }
+
+                p {
+                    font-size: v.$font-sm-1;
+                }
+            }
+    }
+}
+
+&--right--section {
+    align-self:flex-end;
+    img {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    p {
+        color: v.$color-white;
+        font-size: v.$font-sm-2;
     }
 }
 }
+
+.sticky {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+
+    // background-color: v.$color-black;
+    
+    button.stick {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: v.$color-white;
+        background-color: v.$color-p-blue;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+
+        img  {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}
+
+
+
