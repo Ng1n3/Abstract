@@ -1,3 +1,5 @@
+
+
 /* ==== Color ====== */
 
 $color-p-blue: #4c5fd5;
@@ -25,4 +27,14 @@ $bp-large: 65.25em; // 1050px;
 $bp-medium: 60.937em; // 975px;
 $bp-small: 46.875em; // 750px;
 $bp-smaller: 37.5em; // 600px;
+
+/* ==== hamburger props ===== */
+
+$bar-width: 2rem;
+$bar-height: .2rem;
+$bar-gap: .5rem;
+$bar-foreground: #fff;
+$bar-background: #000;
+$animation-timing: 200ms ease-in-out;
+// $hamburger-height: calc($bar-height * 3 + $bar-gap * 2); 
 
