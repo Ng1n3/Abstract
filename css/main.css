@@ -16,6 +16,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 65.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -44,7 +49,7 @@ img {
 }
 
 .header {
-  background-color: #000;
+  background-color: #191a1b;
 }
 .header nav {
   height: 8.8rem;
@@ -124,6 +129,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 73.76em) {
+  .header nav .hamburger-container {
+    display: none;
+  }
+}
 .header nav .hamburger-container img.search-btn {
   width: 2.7rem;
   height: 2.7rem;
@@ -187,11 +197,13 @@ img {
 
 .aside-options {
   position: absolute;
-  padding: 3.8rem 0;
   width: 100vw;
   background-color: #191a1b;
+  -webkit-transition: all ease-out 300ms;
+  transition: all ease-out 300ms;
 }
 .aside-options .buttons-wrapper {
+  margin: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,6 +229,10 @@ img {
 .aside-options .buttons-wrapper .submit:hover,
 .aside-options .buttons-wrapper .signin:hover {
   opacity: 0.7;
+}
+
+.hidden-hamburger {
+  display: none;
 }
 
 .section1 {

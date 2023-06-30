@@ -2,7 +2,7 @@
 @use "mixin" as m;
 
 .header {
-	background-color: v.$color-black;
+	background-color: #191a1b;
 
 	nav {
 		// padding: 2rem 0;
@@ -65,6 +65,10 @@
 			display: flex;
 			gap: 2rem;
 			align-items: center;
+
+            @media only screen and (min-width: v.$bp-largests) {
+                display: none;
+            }
 
 			img.search-btn {
 				width: 2.7rem;
@@ -130,11 +134,12 @@
 
 .aside-options {
 	position: absolute;
-	padding: 3.8rem 0;
 	width: 100vw;
 	background-color: #191a1b;
+    transition: all ease-out 300ms;
 
 	.buttons-wrapper {
+        margin: 3rem 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -154,4 +159,8 @@
             }
 		}
 	}
+}
+
+.hidden-hamburger {
+    display: none;
 }

@@ -1,7 +1,13 @@
 "use strict";
 
-const buttonwrapper = document.querySelector(".button-wrapper");
-const asideoption = document.querySelector('.aside-option');
-const checkbox = document.querySelector('#checkbox');
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const checkbox = document.getElementById("checkbox");
+const nav = document.querySelector("nav");
 
-console.log(checkbox.checked);
+const openMenu = () => {
+	const aside = document.querySelector(".aside-options");
+
+	aside.classList.toggle("hidden-hamburger");
+};
+
+checkbox.addEventListener("click", openMenu);
