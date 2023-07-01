@@ -21,6 +21,21 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 53.125em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 41.875em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -75,7 +90,7 @@ img {
   gap: 1rem;
 }
 .header nav .logo-wrapper h3.help-center {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   font-weight: 300;
   border-left: 2px solid #fff;
@@ -84,6 +99,9 @@ img {
 .header nav .logo-wrapper img.logo {
   width: 14rem;
   height: 4.2rem;
+}
+.header nav .logo-wrapper img.logo:hover {
+  opacity: 0.5;
 }
 .header nav .button-wrapper {
   display: -webkit-box;
@@ -96,7 +114,7 @@ img {
 }
 .header nav .button-wrapper button.help {
   border-radius: 1rem;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   background-color: #191a1b;
   padding: 0.9rem 2.2rem;
@@ -104,7 +122,7 @@ img {
 }
 .header nav .button-wrapper button.signin {
   border-radius: 1rem;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   padding: 0.9rem 3.2rem;
   background-color: #4c5fd5;
@@ -221,7 +239,7 @@ img {
 .aside-options .buttons-wrapper .submit,
 .aside-options .buttons-wrapper .signin {
   padding: 2rem 6rem;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   -webkit-transition: opacity ease-in-out 300ms;
   transition: opacity ease-in-out 300ms;
@@ -259,17 +277,27 @@ img {
   margin: 0 auto;
 }
 .section1--container h1 {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 65.25em) {
+  .section1--container h1 {
+    font-size: 6.5rem;
+  }
 }
 .section1--container input {
   width: 100%;
   padding: 2rem 1.5rem;
-  font-size: 20px;
+  font-size: 2rem;
   border-radius: 0.5rem;
   border: 1px solid #000;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+@media only screen and (max-width: 41.875em) {
+  .section1--container input {
+    width: 80%;
+  }
 }
 .section1--container input:hover, .section1--container input:focus, .section1--container input:active {
   border: 1.2px solid #4c5fd5;
@@ -293,6 +321,11 @@ img {
           justify-content: center;
   row-gap: 4.8rem;
 }
+@media only screen and (max-width: 41.875em) {
+  .section2--con {
+    grid-template-columns: repeat(1, 52rem);
+  }
+}
 .section2--con--container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,15 +337,15 @@ img {
   height: 8.4rem;
 }
 .section2--con--container h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 .section2--con--container p {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
 }
 .section2--con--container a {
-  font-size: 20px;
+  font-size: 2rem;
   color: #4c5fd5;
   margin-top: 1rem;
   -webkit-transition: all ease-out 0.3s;
@@ -343,6 +376,13 @@ img {
   gap: 5rem;
   padding: 5rem 0;
 }
+@media only screen and (max-width: 41.875em) {
+  .footer {
+    display: grid;
+    grid-template-columns: 2, 25rem;
+    gap: 3rem;
+  }
+}
 .footer--container-left--list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,15 +393,22 @@ img {
           justify-content: center;
   color: #fff;
 }
+@media only screen and (max-width: 31.25em) {
+  .footer--container-left--list {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    gap: 3rem;
+  }
+}
 .footer--container-left--list--container h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 .footer--container-left--list--container li:not(:nth-of-type(1)) {
   margin-top: 0.7rem;
 }
 .footer--container-left--list--container li a {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #fff;
   cursor: default;
   -webkit-transition: all ease-out 0.3s;
@@ -371,7 +418,7 @@ img {
   border-bottom: 1px solid #fff;
 }
 .footer--container-left--list--container p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .footer--right--section {
   -ms-flex-item-align: end;
@@ -383,7 +430,7 @@ img {
 }
 .footer--right--section p {
   color: #fff;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .sticky {

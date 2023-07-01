@@ -15,6 +15,18 @@ html {
 	@media only screen and (max-width: v.$bp-large) {
 		font-size: 50%;
 	}
+
+	@media only screen and (max-width: v.$bp-medium) {
+		font-size: 40%;
+	}
+
+	@media only screen and (max-width: v.$bp-small) {
+		font-size: 50%;
+	}
+
+	@media only screen and (max-width: v.$bp-smaller) {
+		font-size: 40%;
+	}
 }
 
 body {

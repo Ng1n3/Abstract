@@ -29,6 +29,10 @@
 			img.logo {
 				width: 14rem;
 				height: 4.2rem;
+
+				&:hover {
+					opacity: .5;
+				}
 			}
 		}
 

@@ -10,10 +10,14 @@ $color-white: #fff;
 /* ==== font ==== */
 
 $font-family-select: "Work Sans", sans-serif;
-$font-sm-1: 16px;
-$font-sm-2: 20px;
-$font-md-1: 24px;
-$font-max-1: 80px;
+$font-sm-1: 1.6rem;
+// $font-sm-1-new: 12px;
+$font-sm-2: 2rem;
+// $font-sm-2-new: 15px;
+$font-md-1: 2.4rem;
+// $font-md-1-new: 19px;
+$font-max-1: 8rem;
+// $font-max-1-new: 60px;
 
 /* ==== font weight ==== */
 $font-wt-sm: 300;
@@ -25,9 +29,9 @@ $font-wt-lg: 500;
 $bp-largests: 73.76em;
 $bp-largest: 73.75em;// 1180px. 1em = 16px;
 $bp-large: 65.25em; // 1050px;
-$bp-medium: 60.937em; // 975px;
-$bp-small: 46.875em; // 750px;
-$bp-smaller: 37.5em; // 600px;
+$bp-medium: 53.125em; // 850px;
+$bp-small: 41.875em; // 670px;
+$bp-smaller: 31.25em; // 500px;
 
 /* ==== hamburger props ===== */
 
