@@ -36,6 +36,11 @@ html {
     font-size: 40%;
   }
 }
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -285,6 +290,11 @@ img {
     font-size: 6.5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .section1--container h1 {
+    font-size: 4.5rem;
+  }
+}
 .section1--container input {
   width: 100%;
   padding: 2rem 1.5rem;
@@ -400,6 +410,11 @@ img {
     gap: 3rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .footer--container-left--list {
+    grid-template-columns: repeat(1, 25rem);
+  }
+}
 .footer--container-left--list--container h3 {
   font-size: 2.4rem;
   font-weight: 500;
@@ -413,6 +428,11 @@ img {
   cursor: default;
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+}
+@media only screen and (max-width: 25em) {
+  .footer--container-left--list--container li a {
+    font-size: 2.4rem;
+  }
 }
 .footer--container-left--list--container li a:hover {
   border-bottom: 1px solid #fff;

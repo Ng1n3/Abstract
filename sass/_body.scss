@@ -26,6 +26,10 @@
             @media only screen and (max-width: v.$bp-large) {
                     font-size: 6.5rem;
             }
+
+            @media only screen and (max-width: v.$bp-smallest) {
+                font-size: 4.5rem;
+            }
 		}
 
 		input {
@@ -141,6 +145,10 @@
                 gap: 3rem;
             }
 
+            @media only screen and (max-width: v.$bp-smallest) {
+                grid-template-columns: repeat(1, 25rem);
+            }
+
 
             &--container {
                 h3 {
@@ -157,6 +165,10 @@
                     color: v.$color-white;
                     cursor: default;
                     transition: all ease-out .3s;
+
+                    @media only screen and (max-width: v.$bp-smallest) {
+                        font-size: v.$font-md-1;
+                    }
 
                     &:hover {
                         border-bottom: 1px solid v.$color-white;

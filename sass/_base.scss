@@ -27,6 +27,12 @@ html {
 	@media only screen and (max-width: v.$bp-smaller) {
 		font-size: 40%;
 	}
+
+	@media only screen and (max-width: v.$bp-smallest) {
+		font-size: 30%;
+	}
+
+	
 }
 
 body {
