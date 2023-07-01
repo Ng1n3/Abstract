@@ -333,7 +333,7 @@ img {
 }
 @media only screen and (max-width: 41.875em) {
   .section2--con {
-    grid-template-columns: repeat(1, 52rem);
+    grid-template-columns: repeat(1, 43rem);
   }
 }
 .section2--con--container {
@@ -419,6 +419,11 @@ img {
   font-size: 2.4rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 25em) {
+  .footer--container-left--list--container h3 h3 {
+    font-size: 2.8rem;
+  }
+}
 .footer--container-left--list--container li:not(:nth-of-type(1)) {
   margin-top: 0.7rem;
 }
@@ -431,7 +436,7 @@ img {
 }
 @media only screen and (max-width: 25em) {
   .footer--container-left--list--container li a {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 .footer--container-left--list--container li a:hover {
